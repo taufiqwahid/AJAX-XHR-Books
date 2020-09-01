@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dicoding Books</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+            <!-- <i class="fa fa-medium fa-6" aria-hidden="true"></i> -->
+            <h2><b>M </b> </h2>
+            <a class="navbar-brand" href="#"> <b>MovieCheck</b> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Populer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- <a class="navbar-brand" href="#">
+                
+                <span class="d-inline-block align-top"></span>
+                Bootstrap
+            </a> -->
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title">Input Buku</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="inputBookId">ID Buku</label>
+                            <input id="inputBookId" type="number" class="form-control" placeholder="ID Buku">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputBookTitle">Judul Buku</label>
+                            <input id="inputBookTitle" type="text" class="form-control" placeholder="Judul Buku">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputBookAuthor">Pengarang</label>
+                            <input id="inputBookAuthor" type="text" class="form-control" placeholder="Pengarang">
+                        </div>
+                        <div class="form-group">
+                            <button id="buttonSave" class="btn btn-success">Save</button>
+                            <button id="buttonUpdate" class="btn btn-primary">Update</button>
+                            <button id="buttonReset" class="btn btn-warning" type="reset">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="listBook" class="row "></div>
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
